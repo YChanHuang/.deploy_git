@@ -20,22 +20,23 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="funtion v.s lamda expressionThis can help to reduce the lines needed to be written.">
+  <meta name="description" content="SQL concepts IIPhoto crdit to Datacamp">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python notes udemy">
-<meta property="og:url" content="http://example.com/2020/10/19/Python-notes-udemy/index.html">
+<meta property="og:title" content="SQL II">
+<meta property="og:url" content="http://example.com/2020/10/22/SQL-II/index.html">
 <meta property="og:site_name" content="Road to Data Analyst">
-<meta property="og:description" content="funtion v.s lamda expressionThis can help to reduce the lines needed to be written.">
+<meta property="og:description" content="SQL concepts IIPhoto crdit to Datacamp">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.imgur.com/C18e4Mn.jpg">
-<meta property="article:published_time" content="2020-10-19T21:06:00.000Z">
-<meta property="article:modified_time" content="2020-10-22T21:08:49.063Z">
+<meta property="og:image" content="https://i.imgur.com/iBPZnf2.jpg">
+<meta property="article:published_time" content="2020-10-22T12:27:59.000Z">
+<meta property="article:modified_time" content="2020-10-22T16:22:49.296Z">
 <meta property="article:author" content="Yi-Chan Huang (James) ">
-<meta property="article:tag" content="Python">
+<meta property="article:tag" content="T-SQL">
+<meta property="article:tag" content="SQL">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.imgur.com/C18e4Mn.jpg">
+<meta name="twitter:image" content="https://i.imgur.com/iBPZnf2.jpg">
 
-<link rel="canonical" href="http://example.com/2020/10/19/Python-notes-udemy/">
+<link rel="canonical" href="http://example.com/2020/10/22/SQL-II/">
 
 
 <script id="page-configurations">
@@ -48,7 +49,7 @@
   };
 </script>
 
-  <title>Python notes udemy | Road to Data Analyst</title>
+  <title>SQL II | Road to Data Analyst</title>
   
 
 
@@ -169,7 +170,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/19/Python-notes-udemy/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2020/10/22/SQL-II/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -182,7 +183,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Python notes udemy
+          SQL II
         </h1>
 
         <div class="post-meta">
@@ -191,16 +192,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
+              
 
-              <time title="Created: 2020-10-19 22:06:00" itemprop="dateCreated datePublished" datetime="2020-10-19T22:06:00+01:00">2020-10-19</time>
+              <time title="Created: 2020-10-22 13:27:59 / Modified: 17:22:49" itemprop="dateCreated datePublished" datetime="2020-10-22T13:27:59+01:00">2020-10-22</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-22 22:08:49" itemprop="dateModified" datetime="2020-10-22T22:08:49+01:00">2020-10-22</time>
-              </span>
 
           
 
@@ -213,18 +208,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h2 id="funtion-v-s-lamda-expression"><a href="#funtion-v-s-lamda-expression" class="headerlink" title="funtion v.s lamda expression"></a>funtion v.s lamda expression</h2><p>This can help to reduce the lines needed to be written.</p>
- <a id="more"></a>
-<h3 id="Example1-def-function"><a href="#Example1-def-function" class="headerlink" title="Example1 (def function)"></a>Example1 (def function)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">def times2(var):</span><br><span class="line">  return var*2</span><br></pre></td></tr></table></figure>
-<h3 id="Example1-lambda"><a href="#Example1-lambda" class="headerlink" title="Example1 (lambda)"></a>Example1 (lambda)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lambda var:var*2</span><br></pre></td></tr></table></figure>
-<p><code>list(filter(lambda))</code></p>
-<!-- ## map() function
-## fliter() function -->
-
-<h1 id="for-loop-dictionary-numpy"><a href="#for-loop-dictionary-numpy" class="headerlink" title="for loop (dictionary / numpy)"></a>for loop (dictionary / numpy)</h1><p><img src="https://i.imgur.com/C18e4Mn.jpg"></p>
-<h3 id="1d-np-array-loop"><a href="#1d-np-array-loop" class="headerlink" title="1d np.array loop"></a>1d np.array loop</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for x in my_array :</span><br><span class="line">    ...</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="2d-np-array-loop"><a href="#2d-np-array-loop" class="headerlink" title="2d np.array loop"></a>2d np.array loop</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for x in np.nditer(my_array) :</span><br><span class="line">    ...</span><br></pre></td></tr></table></figure>
+        <h1 id="SQL-concepts-II"><a href="#SQL-concepts-II" class="headerlink" title="SQL concepts II"></a>SQL concepts II</h1><p><img src="https://i.imgur.com/iBPZnf2.jpg"><br><em>Photo crdit to Datacamp</em></p>
+<a id="more"></a>
+<h2 id="CTE-reusable-query"><a href="#CTE-reusable-query" class="headerlink" title="CTE (reusable query)"></a>CTE (reusable query)</h2><p><strong>WITH</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">WITH name(value1, value2) AS</span><br></pre></td></tr></table></figure>
+<p>EXAMPLE from datacamp</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">-- Create a CTE Called ModePrice which contains two columns</span><br><span class="line">WITH ModePrice(OrderPrice, UnitPriceFrequency) AS</span><br><span class="line">(</span><br><span class="line">	SELECT OrderPrice,</span><br><span class="line">	ROW_NUMBER()</span><br><span class="line">	OVER(PARTITION BY OrderPrice ORDER BY OrderPrice) AS UnitPriceFrequency</span><br><span class="line">	FROM Orders</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">-- Select everything from the CTE</span><br><span class="line">SELECT * from ModePrice</span><br></pre></td></tr></table></figure>
+<h2 id="Window-function"><a href="#Window-function" class="headerlink" title="Window function"></a>Window function</h2><ul>
+<li><strong>OVER()</strong> along with **PARTITION BY ** can create partition through the whole table.</li>
+</ul>
+<h4 id="Example-1"><a href="#Example-1" class="headerlink" title="Example 1"></a>Example 1</h4><p><code>PARTITION BY TerritoryName </code></p>
+<h4 id="Example-2"><a href="#Example-2" class="headerlink" title="Example 2"></a>Example 2</h4><p><code>PARTITION BY TerritoryName ORDER BY DATE</code></p>
+<ul>
+<li><p><strong>LEAD_VALUE</strong></p>
+</li>
+<li><p><strong>LAST_VALUE</strong></p>
+</li>
+<li><p><strong>LEAD</strong> moves the value of current column to the upper place in the next column.<br>(is ouside the window)</p>
+</li>
+<li><p><strong>LAG</strong> moves the value of current column to the lower row of next column.<br>which is the oppisite of <strong>LEAD</strong>.)</p>
+</li>
+</ul>
 
     </div>
 
@@ -234,7 +238,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/Python/" rel="tag"># Python</a>
+              <a href="/tags/T-SQL/" rel="tag"># T-SQL</a>
+              <a href="/tags/SQL/" rel="tag"># SQL</a>
           </div>
 
         
@@ -243,12 +248,12 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2020/10/18/nt01ax_solution/" rel="prev" title="Nural NT01-AX 閃爍白燈解決方式">
-      <i class="fa fa-chevron-left"></i> Nural NT01-AX 閃爍白燈解決方式
+    <a href="/2020/10/20/SQL-I/" rel="prev" title="SQL notes ｜ SQL筆記 | SQL server | mySQL">
+      <i class="fa fa-chevron-left"></i> SQL notes ｜ SQL筆記 | SQL server | mySQL
     </a></div>
       <div class="post-nav-item">
-    <a href="/2020/10/19/Reading-notes-1-Verbal-Advantage/" rel="next" title="Reading notes | Verbal Advantage | Amazon Audible">
-      Reading notes | Verbal Advantage | Amazon Audible <i class="fa fa-chevron-right"></i>
+    <a href="/2020/10/22/ibm/" rel="next" title="Data Science Methodology (Cousera courses by IBM)">
+      Data Science Methodology (Cousera courses by IBM) <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -308,7 +313,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#funtion-v-s-lamda-expression"><span class="nav-number">1.</span> <span class="nav-text">funtion v.s lamda expression</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Example1-def-function"><span class="nav-number">1.1.</span> <span class="nav-text">Example1 (def function)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Example1-lambda"><span class="nav-number">1.2.</span> <span class="nav-text">Example1 (lambda)</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#for-loop-dictionary-numpy"><span class="nav-number"></span> <span class="nav-text">for loop (dictionary &#x2F; numpy)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1d-np-array-loop"><span class="nav-number">0.1.</span> <span class="nav-text">1d np.array loop</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2d-np-array-loop"><span class="nav-number">0.2.</span> <span class="nav-text">2d np.array loop</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#SQL-concepts-II"><span class="nav-number">1.</span> <span class="nav-text">SQL concepts II</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CTE-reusable-query"><span class="nav-number">1.1.</span> <span class="nav-text">CTE (reusable query)</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Window-function"><span class="nav-number">1.2.</span> <span class="nav-text">Window function</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-1"><span class="nav-number">1.2.0.1.</span> <span class="nav-text">Example 1</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Example-2"><span class="nav-number">1.2.0.2.</span> <span class="nav-text">Example 2</span></a></li></ol></li></ol></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
