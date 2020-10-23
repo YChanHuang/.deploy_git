@@ -17,18 +17,18 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","width":350,"display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Select conditions DISTINCT to remove the duplicate dataDISTINCT(name)  LEFT to select the left first charactersLEFT(description, 20) is to find the first 20 characters  RIGHT to select the last right">
+  <meta name="description" content="Select conditions DISTINCT to remove the duplicate dataDISTINCT(name)  LEFT to select the left first characters  LEFT(description, 20) is to find the first 20 characters  RIGHT to select the last righ">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SQL II ｜ SQL筆記 | SQL server | mySQL">
 <meta property="og:url" content="http://example.com/2020/10/21/SQL-I/index.html">
 <meta property="og:site_name" content="Road to Data Analyst">
-<meta property="og:description" content="Select conditions DISTINCT to remove the duplicate dataDISTINCT(name)  LEFT to select the left first charactersLEFT(description, 20) is to find the first 20 characters  RIGHT to select the last right">
+<meta property="og:description" content="Select conditions DISTINCT to remove the duplicate dataDISTINCT(name)  LEFT to select the left first characters  LEFT(description, 20) is to find the first 20 characters  RIGHT to select the last righ">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-10-21T19:27:59.000Z">
-<meta property="article:modified_time" content="2020-10-22T22:12:26.069Z">
+<meta property="article:modified_time" content="2020-10-23T09:10:11.150Z">
 <meta property="article:author" content="Yi-Chan Huang (James) ">
 <meta property="article:tag" content="sql">
 <meta property="article:tag" content="T-SQL">
@@ -207,7 +207,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-10-22 23:12:26" itemprop="dateModified" datetime="2020-10-22T23:12:26+01:00">2020-10-22</time>
+                <time title="Modified: 2020-10-23 10:10:11" itemprop="dateModified" datetime="2020-10-23T10:10:11+01:00">2020-10-23</time>
               </span>
 
           
@@ -231,7 +231,9 @@
         <h3 id="Select-conditions"><a href="#Select-conditions" class="headerlink" title="Select conditions"></a>Select conditions</h3><ul>
 <li><p><strong>DISTINCT</strong> to remove the duplicate data<br><code>DISTINCT(name)</code></p>
 </li>
-<li><p><strong>LEFT</strong> to select the left first characters<br><code>LEFT(description, 20)</code> is to find the first 20 characters</p>
+<li><p><strong>LEFT</strong> to select the left first characters</p>
+</li>
+<li><p><code>LEFT(description, 20)</code> is to find the first 20 characters</p>
 </li>
 <li><p><strong>RIGHT</strong> to select the last right characters</p>
 </li>
@@ -248,7 +250,10 @@
 <li><strong>REPLACE</strong> to replace ‘a’ with ‘b’<br><code>REPLACE(email, &#39;@&#39;, &#39;#&#39;)</code> is to replace <strong>@</strong> with <strong>#</strong></li>
 </ul>
 <h3 id="WHERE"><a href="#WHERE" class="headerlink" title="WHERE"></a>WHERE</h3><h4 id="NOTE-Where-can-only-be-applied-before-GROUP-by"><a href="#NOTE-Where-can-only-be-applied-before-GROUP-by" class="headerlink" title="NOTE: Where can only be applied before GROUP by"></a>NOTE: Where can only be applied before <strong>GROUP by</strong></h4><ul>
-<li><strong>LIKE</strong> <code>LIKE &#39;s%&#39;</code><br>(To select row begin with ‘s’)</li>
+<li><strong>LIKE</strong> <code>LIKE &#39;s%&#39;</code></li>
+</ul>
+<p>(To select row begin with ‘s’)</p>
+<ul>
 <li><strong>IN</strong> <code>WHERE &#39;daniel&#39; IN employee</code></li>
 <li><strong>NOT</strong></li>
 <li><strong>BETWEEN</strong> | <strong>NOT BETWEEN</strong><br><code>BETWEEN 200 and 500</code><br>(To select the value between 200 and 500)</li>
